@@ -1,0 +1,11 @@
+<title>Best deal finder</title>
+<h1>Aur bhai kaisa h!!!</h1>
+<div class='jumbotron'>
+<form action={% url 'home' %} method='POST'>
+    {% csrf_token %} 
+    <label for='product'>Product:</label>
+    <input type='text' name="product" placeholder="Enter the product"><br>
+    <br>
+    <button type='submit' name='search'>Search</button>
+</form>
+</div>

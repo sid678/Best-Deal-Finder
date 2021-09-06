@@ -1,0 +1,14 @@
+<title>Best deal finder</title>
+<h1>Showing the best deals</h1>
+{% for item in items %}
+<div class='container'>
+    <li><b>{{ item.item_name|title }}</b><br> 
+    <img src = "{{item.item_img_link}}" height = "250" width = "300"><br>
+    <strong>Price:</strong>  Rs.{{ item.price }}<br> 
+    <strong>Average rating:</strong>  {{ item.item_rating }}<br>
+    <strong>Number of ratings :</strong>  {{ item.num_ratings }}<br>
+    <strong>Link to buy:</strong>  <a href="{{ item.item_link }}">Website</a><br>
+    <br><br> </li>
+    <br><br>
+</div>
+{% endfor %}

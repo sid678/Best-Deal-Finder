@@ -1,0 +1,50 @@
+<title>Best deal finder</title>
+<h1>Showing the best deals</h1>
+{% for item in deals %}
+<div class='container'>
+    <li><b>{{ item.name|title }}</b><br> 
+    <img src = "{{item.img_url}}"><br>
+    <strong>Price:</strong>  Rs.{{ item.price_inr }}<br> 
+    <strong>Average rating:</strong>  {{ item.avg_rating }}<br>
+    <strong>Number of ratings :</strong>  {{ item.num_ratings }}<br>
+    <strong>Link to buy:</strong>  <a href="{{ item.url }}">Website</a><br>
+    <br><br> </li>
+    <br><br>
+</div>
+{% endfor %}
+{% comment %} {% for item in items %}
+<div class='container'>
+    <li><b>{{ item.name|title }}</b><br> 
+    <img src = "{{item.img_url}}"><br>
+    <strong>Price:</strong>  Rs.{{ item.price_inr }}<br> 
+    <strong>Average rating:</strong>  {{ item.avg_rating }}<br>
+    <strong>Number of ratings :</strong>  {{ item.num_ratings }}<br>
+    <strong>Link to buy:</strong>  <a href="{{ item.url }}">Website</a><br>
+    <br><br> </li>
+    <br><br>
+</div>
+{% endfor %}
+{% for item in f_items %}
+<div class='container'>
+    <li><b>{{ item.name|title }}</b><br> 
+    <img src = "{{item.img_url}}"><br>
+    <strong>Price:</strong>  Rs.{{ item.price_inr }}<br> 
+    <strong>Average rating:</strong>  {{ item.avg_rating }}<br>
+    <strong>Number of ratings :</strong>  {{ item.num_ratings }}<br>
+    <strong>Link to buy:</strong>  <a href="{{ item.url }}">Website</a><br>
+    <br><br> </li>
+    <br><br>
+</div>
+{% endfor %}
+{% for item in s_items %}
+<div class='container'>
+    <li><b>{{ item.name|title }}</b><br> 
+    <img src = "{{item.img_url}}"><br>
+    <strong>Price:</strong>  Rs.{{ item.price_inr }}<br> 
+    <strong>Average rating:</strong>  {{ item.avg_rating }}<br>
+    <strong>Number of ratings :</strong>  {{ item.num_ratings }}<br>
+    <strong>Link to buy:</strong>  <a href="{{ item.url }}">Website</a><br>
+    <br><br> </li>
+    <br><br>
+</div>
+{% endfor %} {% endcomment %}
