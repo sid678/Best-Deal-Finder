@@ -5,7 +5,7 @@
 /.pnp.js
 view/node_modules
 view/__pycache__
-
+test.txt
 # testing
 /coverage
 
